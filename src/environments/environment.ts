@@ -4,7 +4,7 @@
 
 export const environment = {
     production: false,
-    rangeTimeOut: 60,
+    rangeTimeOut: 180,
     alertTimeOut:30
 };
 
