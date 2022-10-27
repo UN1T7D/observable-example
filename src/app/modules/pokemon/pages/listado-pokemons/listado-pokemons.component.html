@@ -1,0 +1,14 @@
+<div class="grid">
+    <div class="col-12">
+        <h2>Lista de Pokemons</h2>
+        <mat-divider></mat-divider>
+    </div>
+</div>
+<div class="grid | mt-5">
+    <div class="col">
+        <app-tabla (onIdPokemon)="getIdPokemon($event)"></app-tabla>
+    </div>
+    <div class="col">
+        <app-descripcion *ngIf="idPokemon !== ''" [inIdPokemon]="idPokemon"></app-descripcion>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="p-5">
+    <h2>Componente padre</h2>
+    <mat-chip-list>
+        <mat-chip>
+            <span>{{ countView }}</span>
+        </mat-chip>
+        <button mat-flat-button color="accent" (click)="aumentarContador()">
+            Sumar
+        </button>
+    </mat-chip-list>
+    <div class="grid">
+        <div class="col-6">
+            <app-child></app-child>
+        </div>
+        <div class="col-6">
+            <app-child2></app-child2>
+        </div>
+    </div>
+</div>

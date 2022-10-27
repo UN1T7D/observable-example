@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-title>
+        <h3 class="text-center | text-4xl">{{ pokemon?.name }}</h3>
+    </mat-card-title>
+    <mat-card-subtitle>
+        <mat-chip-list aria-label="Dog selection">
+            <mat-chip *ngFor="let item of pokemon?.stats"
+                >{{ item.stat.name }} | {{ item.base_stat }}</mat-chip
+            >
+        </mat-chip-list>
+    </mat-card-subtitle>
+    <mat-card-content class="flex  justify-content-center align-items-center">
+        <img [src]="pokemon?.sprites?.other?.home?.front_default" [alt]="pokemon?.name" />
+    </mat-card-content>
+</mat-card>

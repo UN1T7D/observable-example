@@ -1,0 +1,39 @@
+.alertLoginOut {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.822);
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+    transform: scale(0);
+    .dialog {
+        min-width: 400px;
+        min-height: 400px;
+        background: rgb(114, 114, 114);
+        border-radius: 10px;
+        .dialog-header,
+        .dialog-body,
+        .dialog-footer {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 1rem;
+        }
+        .dialog-body {
+            min-height: 300px;
+        }
+    }
+
+    &.show {
+        transition: 0.1s;
+        transform: scale(1);
+    }
+    &.remove {
+        transition: 0.1s;
+        transform: scale(0);
+    }
+}
