@@ -52,7 +52,7 @@ export class HttpListenerInterceptor implements HttpInterceptor {
 
         this._timeOutListener.timerReset = environment.rangeTimeOut;
 
-        // console.log(`newUrl`, newUrl)
+        console.log(`newUrl`, newUrl)
 
         return next.handle(
             request.clone({
