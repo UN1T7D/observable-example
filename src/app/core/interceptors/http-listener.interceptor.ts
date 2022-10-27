@@ -40,6 +40,7 @@ export class HttpListenerInterceptor implements HttpInterceptor {
         const server: ServerHostMap = Object.assign({
             ...AppConfigService.settings?.server,
         });
+        console.log(`server`, server)
 
         type ObjectKey = keyof typeof server;
 
