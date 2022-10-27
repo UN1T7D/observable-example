@@ -65,7 +65,7 @@ export class TimeOutComponent implements OnInit {
         localStorage.clear();
         this.hasFinisCount = false;
         console.log('sesiones cerradas')
-        this._router.navigate(['/login']);
+        this._router.navigate(['/']);
     }
 
 }
