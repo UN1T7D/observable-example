@@ -40,7 +40,7 @@ export class HttpListenerInterceptor implements HttpInterceptor {
         const server: ServerHostMap = Object.assign({
             ...AppConfigService.settings?.server,
         });
-        console.log(`server`, server)
+        // console.log(`server`, server)
 
         type ObjectKey = keyof typeof server;
 
@@ -53,7 +53,7 @@ export class HttpListenerInterceptor implements HttpInterceptor {
 
         this._timeOutListener.timerReset = environment.rangeTimeOut;
 
-        console.log(`newUrl`, newUrl)
+        // console.log(`newUrl`, newUrl)
 
         return next.handle(
             request.clone({

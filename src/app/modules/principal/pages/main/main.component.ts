@@ -48,7 +48,7 @@ export class MainComponent implements OnInit {
 
     private async subscribeToObservables() {
         const response: boolean = await this.listenerTime()
-        console.log(`response`, response)
+        // console.log(`response`, response)
 
         this.click$.subscribe({
             next: () => {
